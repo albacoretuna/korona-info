@@ -12,7 +12,7 @@ export default function MyApp ({ Component, pageProps }:{Component:any, pageProp
   
 
   const router = useRouter()
-  const language = router.query.language || 'fi';
+  const language = router.query.language || 'fa';
   const t = (key: string) => polyglot.t(language +'.' + key)
 
     return <UserContext.Provider value={{language, t}}> 
